@@ -1,0 +1,349 @@
+/* Reset global para todos los elementos / Global reset for all elements */
+* { 
+    box-sizing: border-box; /* Incluye padding y border en el ancho total / Includes padding and border in total width */
+    margin: 0; /* Elimina márgenes por defecto / Removes default margins */
+    padding: 0; /* Elimina padding por defecto / Removes default padding */
+}
+
+/* Estilos para el cuerpo de la página / Styles for the page body */
+body {
+    background: #040405; /* Color de fondo oscuro / Dark background color */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23840303' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); /* Imagen de fondo SVG / SVG background image */
+    color: #fff; /* Color del texto blanco / White text color */
+    font-size: 16px; /* Tamaño de fuente base / Base font size */
+    font-family: "Oswald", sans-serif; /* Fuente Oswald / Oswald font family */
+}
+
+/* Estilos para enlaces / Styles for links */
+a{
+    color : #fff; /* Color blanco para enlaces / White color for links */
+    text-decoration: none; /* Sin subrayado / No underline */
+}
+
+/* Estilos para listas no ordenadas / Styles for unordered lists */
+ul {
+    list-style: none; /* Sin viñetas / No bullets */
+}
+
+/* Estilos para el contenedor principal / Styles for the main container */
+.container {
+    width: 90%; /* Ancho del 90% / 90% width */
+    margin: auto; /* Centrado automático / Auto center */
+}
+
+/* Estilos para la imagen del logo / Styles for the logo image */
+.nav-osvaldo {
+    width: 50px;   /* Ancho de la imagen / Image width */
+    height: 50px;  /* Alto de la imagen / Image height */
+    object-fit: contain; /* Mantiene la proporción / Maintains aspect ratio */
+}
+/* Navegacion / Navigation */
+.nav-main{
+    font-size: 17px; /* Tamaño de fuente para navegación / Font size for navigation */
+    display: flex; /* Usa flexbox / Uses flexbox */
+    justify-content: space-between; /* Espacia elementos / Spaces elements */
+    align-items: center; /* Alinea verticalmente / Aligns vertically */
+    height: 60px; /* Alto de la barra / Bar height */
+    padding: 20px 0; /* Padding vertical / Vertical padding */
+}
+
+nav-brand {
+    width: 50px; /* Ancho del brand / Brand width */
+}
+
+/*Nav left / Left nav */
+.nav-main ul {
+    display: flex; /* Flex para lista / Flex for list */
+}
+
+.nav-main ul li {
+    padding: 10px; /* Padding para items / Padding for items */
+}
+
+.nav-main ul li a { /* Nota: typo en clase, debería ser .nav-main / Note: typo in class, should be .nav-main */
+    padding: 7px; /* Padding para enlaces / Padding for links */
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #fff; /* Borde inferior al pasar mouse / Bottom border on hover */
+}
+
+.nav-main ul.nav-main {
+    flex: 1; /* Ocupa espacio disponible / Takes available space */
+    margin-left: 20px; /* Margen izquierdo / Left margin */
+}
+
+.menu-btn {
+    position: absolute; /* Posición absoluta para el botón de menú / Absolute position for menu button */
+    cursor: pointer; /* Cursor de puntero / Pointer cursor */
+    top: 15px; /* Posición desde el top / Position from top */
+    right: 30px; /* Posición desde la derecha / Position from right */
+    z-index: 2; /* Asegura que el botón esté por encima de otros elementos / Ensures button is above other elements */
+    font-size: 2; /* Tamaño del ícono de menú / Menu icon size */
+    display: none; /* Oculta el botón en pantallas grandes / Hides button on large screens */
+}
+
+/* Showcase */
+hr {
+    margin: 10px 0; /* Margen vertical / Vertical margin */
+}
+.showcase {
+    width: 100%; /* Ancho completo / Full width */
+    height: 550px; /* Alto fijo / Fixed height */
+    background:url("./img/pexels-hu-nh-nh-2159207655-35864996.jpg")no-repeat center center/cover; /* Imagen de fondo / Background image */
+    padding: 50px; /* Padding inferior / Bottom padding */
+     margin: 20px 0; /* Margen vertical / Vertical margin */
+    display: flex; /* Flexbox / Flexbox */
+    flex-direction: column; /* Dirección columna / Column direction */
+    align-items: center; /* Alinea horizontalmente / Aligns horizontally */
+    justify-content: flex-end; /* Alinea al final / Aligns to end */
+}
+
+.btn{
+    cursor: pointer; /* Cursor de puntero / Pointer cursor */
+    display: inline-block; /* Display inline-block / Inline-block display */
+    border: 0; /* Sin borde / No border */
+    font-weight: bold; /* Negrita / Bold */
+    padding: 10px 20px; /* Padding interno / Internal padding */
+    background: #262626; /* Fondo gris oscuro / Dark gray background */
+    color: #fff; /* Texto blanco / White text */
+    font-size: 15px; /* Tamaño de fuente / Font size */
+    border: 1px solid #fff; /* Borde blanco / White border */
+    margin:  40px 0 ; /* Margen vertical / Vertical margin */
+}
+
+.btn:hover {
+   opacity: .9; /* Opacidad al pasar mouse / Opacity on hover */
+}
+
+/* Estilos para títulos y párrafos en showcase / Styles for headings and paragraphs in showcase */
+.showcase h2,
+.showcase p {
+    margin-bottom: 10px; /* Margen inferior para separación / Bottom margin for spacing */
+    text-align: center; /* Centra el texto horizontalmente / Centers text horizontally */
+}
+
+/* Estilos para el pie de página / Styles for the footer */
+.new-cards {
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales / Four equal columns */
+    gap: 25px; /* Espacio entre tarjetas / Space between cards */
+    margin: 20px 0; /* Margen vertical / Vertical margin */
+
+}
+
+.new-cards img {
+    width: 100%; /* Ancho completo / Full width */
+    height: 180px; /* Alto fijo / Fixed height */
+    
+}
+
+.new-cards h3 {
+    font-size: 20px; /* Tamaño de fuente para títulos / Font size for titles */
+    margin: 10px 0; /* Margen vertical / Vertical margin */
+}
+
+.new-cards a {
+    padding: 10px 0; /* Padding para enlaces / Padding for links */
+    color: #fff; /* Color blanco para enlaces / White color for links */
+    text-transform: uppercase; /* Texto en mayúsculas / Uppercase text */
+    display: inline-block; /* Display inline-block / Inline-block display */
+    font-weight: bold; /* Negrita / Bold */
+
+}
+
+.new-cards a:hover {
+    text-decoration: underline; /* Subrayado al pasar mouse / Underline on hover */
+}
+
+/* cards banner one */
+.cards-banner-one {
+     width: 100%; /* Ancho completo / Full width */
+    height: 350px; /* Alto fijo / Fixed height */
+    background:url("./img/pexels-ivandesignx-31470906.jpg") no-repeat center center/cover; /* Imagen de fondo / Background image, el no-repeat center center/cover es para ajustar la imagen */
+    display: flex; /* Flexbox / Flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente / Centers content horizontally */
+    align-items: center; /* Alinea al inicio verticalmente / Aligns to top vertically */
+    margin-bottom: 40px;
+}
+
+.cards-banner-one .content {
+    width: 40%; /* Ancho del contenido / Content width */
+    padding: 30px;; /* Padding simétrico para centrar / Symmetric padding for centering */
+    color:#fff; /* Color del texto blanco / White text color */
+    text-align: center; /* Centra el texto horizontalmente / Centers text horizontally */
+  
+}
+
+.cards-banner-one p,
+.cards-banner-one h2 {
+    margin: 0 0 20px 0; /* Margen aumentado para separar elementos / Increased margin to separate elements */
+}
+
+/* cards banner two */
+.cards-banner-two {
+    width: 100%; /* Ancho completo / Full width */
+    height: 350px; /* Alto fijo / Fixed height */
+    background: url("./img/pexels-rajeev-negi-3842428-34558342.jpg") no-repeat center center/cover; /* Imagen de fondo / Background image */
+    display: flex; /* Flexbox / Flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente / Centers content horizontally */
+    align-items: center; /* Alinea al inicio verticalmente / Aligns to top vertically */
+    margin-bottom: 40px; /* Margen inferior / Bottom margin */
+}
+
+.cards-banner-two .content {
+    width: 80%; /* Ancho del contenido / Content width, con esto se mueve el contenido y lo reubica */
+    transform: translateY(30px); /* baja */
+    color: #fff; /* Color del texto blanco / White text color */
+  
+}
+
+.cards-banner-two p,
+.cards-banner-two h2 {
+    margin: 0 0 20px 0; /* Margen inferior corregido / Corrected bottom margin */
+}
+
+/*social media */
+.social {
+    margin: 50px 0; /* Margen vertical / Vertical margin */
+
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex; /* Flexbox / Flexbox */
+    justify-content: center; /* Centra los enlaces horizontalmente / Centers links horizontally */
+    align-items: center; /* Alinea los enlaces verticalmente / Aligns links vertically */
+    gap: 20px; /* Espacio entre enlaces / Space between links */
+}
+
+.links a {
+    margin: 0 30px; /* Margen horizontal para separación / Horizontal margin for spacing */
+}
+
+.links a i {
+    font-size: 3rem; /* Tamaño de los íconos / Icon size */
+    color: #fff; /* Color blanco para íconos / White color for icons */
+}
+
+/*footer links */
+
+.footer-links{
+    background: #2f3640; /* Fondo oscuro para el footer / Dark background for footer */
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0; /* Padding vertical / Vertical padding */
+}
+
+.footer-container {
+    display: grid; /* Grid / Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho / 4 columns of equal width */
+    gap: 100px; /* Espacio entre enlaces / Space between links */
+    align-items: flex-start; /* Alinea al inicio verticalmente / Aligns to top vertically */
+    justify-content: center; /* Centra el contenido horizontalmente / Centers content horizontally */
+}
+
+.footer-container ul {
+    margin: 0 auto; /* Centra las listas dentro de cada columna / Centers lists within each column */
+}
+
+.footer-container ul li {
+    line-height: 2.8;
+}
+
+.footer{
+    background: #2f3240;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0; /* Padding vertical / Vertical padding */
+    text-align: center; /* Centra el texto horizontalmente / Centers text horizontally */
+    padding-bottom: 20px; /* Padding inferior para separar del borde / Bottom padding to separate from edge */
+}
+
+@media (max-width: 700px){
+
+    .menu-btn {
+        display: block; /* Muestra el botón en pantallas pequeñas / Shows button on small screens */
+    }
+
+    .nav-main ul.nav-menu {
+        display: block; /* Cambia a bloque para apilar elementos / Switch to block to stack items */
+        position: absolute; /* Posición absoluta para superponer / Absolute position to overlay */
+        top: 0; /* Posición debajo de la barra de navegación / Position below*/
+        left: 0;
+        background:  #2f3640; /* Fondo oscuro para el menú desplegable / Dark background for dropdown menu */
+        height: 100%; /* Altura completa para cubrir toda la pantalla / Full height to cover entire screen */
+        padding: 3px;
+        opacity: 0.9; /* Opacidad para el menú desplegable / Opacity for dropdown menu */
+        transform: translateX(-400px); /* Posición inicial fuera de la pantalla / Initial position off-screen */
+        transition: transform 0.5s ease-in-out; /* Transición suave para el menú desplegable / Smooth transition for dropdown menu */
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li{
+        padding: 20px; /* Padding para elementos del menú / Padding for menu items */
+       font-size: 14px;
+    }
+
+
+
+    .nav-main ul.nav-menu-right {
+        margin-right: 35px; /* Ajusta el margen derecho para el menú derecho / Adjust right margin for right menu */
+    }
+    
+       
+    .new-cards{
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas pequeñas / Switch to 2 columns on small screens */
+    }
+
+    
+    .cards-banner-one .content{
+        width: 80%; /* Ancho del contenido para pantallas pequeñas / Content width for small screens */
+    }
+
+    .cards-banner-two .content {
+        width: 80%; /* Ancho del contenido para pantallas pequeñas / Content width for small screens */
+    }
+
+    .footer-links .footer-container {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas pequeñas / Switch to 2 columns on small screens */
+    }
+
+
+}
+
+@media (max-width: 500px){
+
+     .menu-btn {
+        display: block; /* Muestra el botón en pantallas pequeñas / Shows button on small screens */
+    }
+    .new-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .new-cards img {
+        height: 200px; /* Ajusta la altura de las imágenes para pantallas muy pequeñas / Adjust image height for very small screens */
+    }
+
+
+    .cards-banner-one .content
+    .cards-banner-two .content
+    {
+       width: 100%; /* Ancho del contenido para pantallas muy pequeñas / Content width for very small screens */
+       padding: 60px 20px; /* Aumenta el padding para pantallas muy pequeñas / Increase padding for very small screens */;
+    }
+
+    .footer-links .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+
+}
