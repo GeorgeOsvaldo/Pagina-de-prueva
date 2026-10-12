@@ -1,2 +1,2 @@
 # Pagina-de-prueva
-Es un proyecto de prueba nada inivador.
+Es un proyecto de prueba nada inovador.
